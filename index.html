@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anushka's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo">Anushka's <span>Portfolio</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div id="darkmode-toggle" class="btn">
+            <div class="btn__indicator">
+              <div class="btn__icon-container">
+                <i class="btn__icon fa-solid"></i>
+              </div>
+            </div>
+          </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, I am <span>Anushka</span></h1>
+            <h3 class="text-animation">I'm a <span></span></h3>
+            <p>Hello! I'm a passionate Computer Science Engineering student who loves 
+                coding and technology. I have hands-on experience with HTML, CSS, JavaScript, 
+                and SQL, and my goal is to become a skilled Web Developer. I am driven by curiosity and 
+                a desire to create meaningful solutions through code.
+                I am excited to join a team that is looking for freshers who are
+                 passionate about coding and developing software solutions for real-world problems. 
+                 I look forward to learning and growing in a fun, supportive environment with smart 
+                 and enthusiastic engineers.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/anushkagoyal1164/" target="_blank"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/anushkagoyal23" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/_anushka_1164/" target="_blank"><i
+                        class='bx bxl-instagram-alt'></i></a>
+            </div>
+            <div class="btn-group">
+                <a href="https://drive.google.com/file/d/1Rf-lxYbV8y__xJZWrZvZ3ZM3EmJFEm5m/view?usp=sharing" download  class="btn">Download Resume</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="Im.jpg" alt="Personal Picture">
+        </div>
+    </section>
+
+    <section class="education" id="education">
+        <h2 class="heading">Education</h2>
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2023-2024</div>
+                <div class="timeline-content">
+                    <h3>Software Programming Diploma Course</h3>
+                    <p>Web Development Course ||  Duration: 15 month ||
+                     During this Course, I learned javascript, HTML & CSS and problem-solving skills and deepened my understanding of the language</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2020-2023</div>
+                <div class="timeline-content">
+                    <h3>University</h3>
+                    <p>Bachelor of  Science || S. S. Jain Subodh P.G. Mahila College, Rajasthan University
+                        || Jaipur, Rajasthan || Graduation Year: 2023</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2020</div>
+                <div class="timeline-content">
+                    <h3>High School</h3>
+                    <p>Class 12th || Govt. Sr. Sec. Panchvati School, Jaipur || RBSE Board || Year of Passing: 2020 || Percentage: 80.80</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="heading">Projects</h2>
+        <div class="projects-container">
+            <a href="https://goyalanushka.me/" class="project-item">
+                <img src="bus_booking.jpeg" alt="Bus Booking App">
+                <h3>Bus Booking App</h3>
+                <p>This project allows users to book bus tickets online, view available routes, and manage their bookings.</p>
+            </a>
+            <a href="https://thriving-churros-f0d554.netlify.app/" class="project-item">
+                <img src="recipe-book_img.jpg" alt="Recipe Book">
+                <h3>Recipe Book</h3>
+                <p>A handy digital recipe book offering a diverse collection of easy-to-follow recipes for delicious home-cooked meals.</p>
+            </a>
+            <a href="file:///C:/Users/Navgurukul/Desktop/Projects/calculator/index.html" class="project-item">
+                <img src="calculator.webp" alt="Calculator">
+                <h3>Calculator</h3>
+                <p>A versatile and user-friendly calculator for quick and accurate arithmetic operations.</p>
+            </a>
+        </div>
+    </section>
+    
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="https://formspree.io/f/xqazzoao"
+        method="POST" id="contact-form">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name" id="name" name="name" autocomplete="off" required/>
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="Email" id="email" autocomplete="off" required name="email"/>
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Phone Number" id="phone" name="phone"  autocomplete="off" required/>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Subject" id="subject" autocomplete="off" name="subject" required/>
+                </div>
+            </div>
+            <div class="input-group-2">
+                <textarea id="message" cols="30" rows="10" placeholder="Your Message" name="textarea"
+                    autocomplete="off" required></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+        </form>
+    </section>
+    
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/anushkagoyal1164/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/anushkagoyal23" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.instagram.com/_anushka_1164/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+        </div>
+        <ul class="list">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#home">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p class="copyright">
+            <i class='bx bx-copyright'></i> | Created By Anushka Goyal | 2024
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
